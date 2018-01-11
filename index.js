@@ -46,11 +46,12 @@ function total() {
 function removeFromCart(item) {
   var items = [];
   for (let i = 0; i < cart.length; i++) {
-    items.push(Object.getOwnPropertyNames(cart[i][0]));
+    items.push(Object.getOwnPropertyNames(cart[i]));
   }
   console.log(cart)
   console.log(items)
   var index = items.indexOf(item)
+  console.log(index)
   if (index >= 0) {
     return cart.splice(index,1);
   }
