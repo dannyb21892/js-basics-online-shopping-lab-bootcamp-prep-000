@@ -21,7 +21,7 @@ function viewCart() {
   }
   else {
     var output = "In your cart, you have"
-    for (i = 0; i < cart.length; i++) {
+    for (let i = 0; i < cart.length; i++) {
       if (i > 0 && i === cart.length - 1) {
         output = output + " and"
       }
@@ -37,7 +37,7 @@ function viewCart() {
 
 function total() {
   var price = 0;
-  for (i = 0; i < cart.length; i++) {
+  for (let i = 0; i < cart.length; i++) {
     price = price + cart[i][Object.getOwnPropertyNames(cart[i])];
   }
   return price
@@ -45,7 +45,7 @@ function total() {
 
 function removeFromCart(item) {
   var items = [];
-  for (i = 0; i < cart.length; i++) {
+  for (let i = 0; i < cart.length; i++) {
     items.push(Object.getOwnPropertyNames(cart[i]));
   }
   index = items.indexOf(item)
