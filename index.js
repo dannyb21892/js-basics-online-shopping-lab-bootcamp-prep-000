@@ -48,6 +48,8 @@ function removeFromCart(item) {
   for (let i = 0; i < cart.length; i++) {
     items.push(Object.getOwnPropertyNames(cart[i]));
   }
+  console.log(cart)
+  console.log(items)
   var index = items.indexOf(item)
   if (index >= 0) {
     return cart.splice(index,1);
@@ -66,3 +68,7 @@ function placeOrder(cardNumber) {
   }
   cart = [];
 }
+
+addToCart("bananas");
+addToCart("dannybs");
+removeFromCart("dannybs");
