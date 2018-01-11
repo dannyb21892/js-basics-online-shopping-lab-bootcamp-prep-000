@@ -48,8 +48,8 @@ function removeFromCart(item) {
   for (i = 0; i < cart.length; i++) {
     items.push(Object.getOwnPropertyNames(cart[i]));
   }
-  if (items.includes(item)) {
-    
+  if (items.indexOf(item) >= 0) {
+    cart.splice()
   }
 }
 
