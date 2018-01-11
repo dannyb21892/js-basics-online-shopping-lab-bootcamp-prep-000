@@ -49,7 +49,7 @@ function removeFromCart(item) {
     items.push(Object.getOwnPropertyNames(cart[i]));
   }
   index = items.indexOf(item)
-  if (index) >= 0) {
+  if (index >= 0) {
     return cart.splice(index,1);
   }
   else {
