@@ -48,8 +48,9 @@ function removeFromCart(item) {
   for (i = 0; i < cart.length; i++) {
     items.push(Object.getOwnPropertyNames(cart[i]));
   }
-  if (items.indexOf(item) >= 0) {
-    cart.splice()
+  index = items.indexOf(item)
+  if (index) >= 0) {
+    cart = [...cart.slice(0,index)
   }
 }
 
