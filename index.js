@@ -40,4 +40,4 @@ function placeOrder(cardNumber) {
 }
 
 test = [{key1: "value1"}, {key2: "value2"}];
-console.log(test[1])
+console.log(test[1].key)
