@@ -22,7 +22,8 @@ function viewCart() {
   else {
     var output = "In your cart, you have "
     for (i = 0; i < cart.length; i++) {
-      output = output + ''
+      var item = Object.getOwnPropertyNames(cart[i])
+      output = output + `${item} ` 
     }
   }
 }
