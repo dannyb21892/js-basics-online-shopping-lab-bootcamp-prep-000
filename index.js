@@ -38,3 +38,6 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   // write your code here
 }
+
+test = [{key1: "value1"}, {key2: "value2"}];
+console.log(test(1))
