@@ -70,9 +70,9 @@ function placeOrder(cardNumber) {
     return;
   }
   else {
-    var output = `Your total cost is ${total()}, which will be charged to the card ${cardNumber}.`
+    var total = total() = `Your total cost is ${total()}, which will be charged to the card ${cardNumber}.`
   }
   cart = [];
-  console.log(`${output}`);
+  console.log(`Your total cost is ${total()}, which will be charged to the card ${cardNumber}.`);
   return;
 }
