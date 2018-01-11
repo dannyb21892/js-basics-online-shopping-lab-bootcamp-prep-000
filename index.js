@@ -70,7 +70,3 @@ function placeOrder(cardNumber) {
   cart = [];
   return(output)
 }
-
-addToCart("bananas");
-addToCart("dannybs");
-removeFromCart("dannybs");
