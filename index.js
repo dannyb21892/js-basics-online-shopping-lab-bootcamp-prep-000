@@ -20,10 +20,13 @@ function viewCart() {
     return "Your shopping cart is empty."
   }
   else {
-    var output = "In your cart, you have "
+    var output = "In your cart, you have"
     for (i = 0; i < cart.length; i++) {
+      if (i > 0 && i === cart.length - 1) {
+        output = output + " and"
+      }
       var item = Object.getOwnPropertyNames(cart[i])
-      output = output + `${item} at $${cart[i][item]}` ;
+      output = output + ` ${item} at $${cart[i][item]}` ;
       if (cart.length >= 3) {
         output = output + ",";
       }
