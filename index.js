@@ -26,11 +26,12 @@ function viewCart() {
         output = output + " and"
       }
       var item = Object.getOwnPropertyNames(cart[i])
-      output = output + ` ${item} at $${cart[i][item]}` ;
-      if (cart.length >= 3) {
+      output = output + ` ${item} at $${cart[i][item]}`;
+      if (cart.length >= 3 && i < cart.length - 1) {
         output = output + ",";
       }
     }
+    output = output + ".";
   }
 }
 
