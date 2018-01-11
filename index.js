@@ -48,7 +48,7 @@ function removeFromCart(item) {
   for (i = 0; i < cart.length; i++) {
     items.push(Object.getOwnPropertyNames(cart[i]));
   }
-  if (cart.hasOwnProperty(item)) {
+  if (items.includes(item)) {
     
   }
 }
