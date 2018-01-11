@@ -48,7 +48,7 @@ function removeFromCart(item) {
   for (let i = 0; i < cart.length; i++) {
     items.push(Object.getOwnPropertyNames(cart[i]));
   }
-  index = items.indexOf(item)
+  var index = items.indexOf(item)
   if (index >= 0) {
     return cart.splice(index,1);
   }
@@ -64,4 +64,5 @@ function placeOrder(cardNumber) {
   else {
     return(`Your total cost is ${total()}, which will be charged to the card ${cardNumber}.`)
   }
+  cart = [];
 }
