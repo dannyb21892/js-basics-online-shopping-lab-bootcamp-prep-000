@@ -23,7 +23,10 @@ function viewCart() {
     var output = "In your cart, you have "
     for (i = 0; i < cart.length; i++) {
       var item = Object.getOwnPropertyNames(cart[i])
-      output = output + `${item} ` 
+      output = output + `${item} at $${cart[i][item]}` ;
+      if (cart.length >= 3) {
+        output = output + ",";
+      }
     }
   }
 }
