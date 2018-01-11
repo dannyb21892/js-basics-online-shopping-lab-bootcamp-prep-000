@@ -25,7 +25,7 @@ function viewCart() {
       if (i > 0 && i === cart.length - 1) {
         output = output + " and"
       }
-      var item = Object.getOwnPropertyNames(cart[i])
+      var item = Object.getOwnPropertyNames(cart[i])[0]
       output = output + ` ${item} at $${cart[i][item]}`;
       if (cart.length >= 3 && i < cart.length - 1) {
         output = output + ",";
@@ -38,7 +38,7 @@ function viewCart() {
 function total() {
   var price = 0;
   for (let i = 0; i < cart.length; i++) {
-    price = price + cart[i][Object.getOwnPropertyNames(cart[i])];
+    price = price + cart[i][Object.getOwnPropertyNames(cart[i])[0]];
   }
   return price
 }
